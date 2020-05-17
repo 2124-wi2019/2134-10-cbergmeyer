@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Employee Detail</h1>
+<div mat-dialog-content>
+  <h2>{{data.first_name}} {{data.last_name}}</h2>
+  <div class='left'>
+    <img src='{{data.image_filename}}'/>
+  </div>
+  <div class='right'>
+    <h3>Data</h3>
+    <p><b>Hire Date:</b> {{data.hire_date | date}}</p>
+    <p><b>Annual Salary:</b> {{data.annual_salary | currency}}</p>
+    <p><b>Department:</b> {{data.department.name}}</p>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button [mat-dialog-close]=''>OK!</button>
+</div>
