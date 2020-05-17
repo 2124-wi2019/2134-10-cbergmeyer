@@ -1,0 +1,15 @@
+/* Add application styles & imports to this file! */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.left {
+  width:50%;
+  float:left;
+}
+.right {
+  width:50%;
+  float:right;
+}
+
+img {
+  width:90%;
+}

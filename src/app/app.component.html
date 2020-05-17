@@ -1,0 +1,6 @@
+<h1>Employees</h1>
+<ul>
+<li *ngFor='let employee of employeeData'>
+  <a href='#' id='{{employee.id}}' (click)='openDialog($event)'>{{employee.first_name}} {{employee.last_name}}</a>
+</li>
+</ul>
